@@ -25,62 +25,8 @@
     flex-direction: column;
 }
 
-.step-container {
-    /* min-width: 100px; */
-    position: relative;
-}
-
 .progress-bar {
     width: 350px;
-}
-
-.step {
-    color: white;
-    font-size: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-}
-
-.progress-step {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #664DE5;
-    will-change: width;
-    z-index: -1;
-}
-
-.step-container::before {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: -83%;
-    width: 40px;
-    border-bottom: thin solid #664DE5;
-    content: "";
-    /* z-index: -1; */
-}
-
-
-.step-container::after {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 65%;
-    width: 50px;
-    border-bottom: thin solid #664DE5;
-    content: "";
-    /* z-index: -1; */
-}
-
-.step-container:last-child:after {
-    width: 0;
-}
-
-.step-container:first-child:before {
-    width: 0;
 }
 
 .flex-row {
@@ -110,21 +56,26 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 20px;
 }
 
 .field-div>label {
-    font-size: 1rem;
+    font-size: .9rem;
     color: #364259;
+    font-weight: 600;
+    display: block;
+    margin: 10px 0px;
 }
 
 .form-button {
     height: 50px;
-    width: 400px;
+    width: 423px;
     border-radius: 6px;
     padding: 10px;
     border: none;
     background-color: #664DE5;
     color: white;
+    cursor: pointer;
 }
 
 .plan-radio {
@@ -141,6 +92,20 @@
     border: thin solid #d3d3d3ad;
     padding: 20px;
     border-radius: 7px;
+    cursor: pointer;
+}
+
+.selected-plan {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 150px;
+    height: 150px;
+    border: thin solid #664DE5;
+    padding: 20px;
+    border-radius: 7px;
+    cursor: pointer;
 }
 
 .plan-option {
@@ -156,11 +121,17 @@ h4 {
 }
 
 .fixed-url {
-    width: 150px;
+    width: 120px;
     font-size: 1rem;
     background-color: #F8F9FC;
     padding: 15px;
     border: thin solid #d3d3d3ad;
 }
 
-.url-input {}
+.url-input {
+    width: 250px !important;
+}
+
+.radio-container {
+    width: 410px;
+}

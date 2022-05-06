@@ -1,10 +1,13 @@
-import OnboardingFormComponent from './components/onboardingFormComponent/onboardingFormComponent';
+import OnboardingFormComponent from './components/onboardingForm/onboardingFormComponent';
 import './App.css';
+import { StepContext } from './context/stepContext';
 
 function App() {
   return (
     <div className="App">
-      <OnboardingFormComponent></OnboardingFormComponent>
+      <StepContext initialState={0} >
+        <OnboardingFormComponent></OnboardingFormComponent>
+      </StepContext>
     </div>
   );
 }
