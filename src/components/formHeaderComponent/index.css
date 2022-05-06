@@ -1,0 +1,27 @@
+.flex-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.header-main {
+    color: #323843;
+    font-size: 1.5rem;
+}
+
+.header-sub {
+    color: #9ba0ab;
+    font-size: 1.1rem;
+}
