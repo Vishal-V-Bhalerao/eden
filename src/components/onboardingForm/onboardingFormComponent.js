@@ -68,7 +68,7 @@ export default function OnboardingFormComponent() {
                                     <ErrorMessage className="error-message" name="workspaceName" component="span" ></ErrorMessage>
                                 </div>
                                 <div className='field-div'>
-                                    <label htmlFor="workspaceUrl">Workspace Url <span>( optional )</span> </label>
+                                    <label htmlFor="workspaceUrl">Workspace Url <span className='optional'>(optional)</span> </label>
                                     <div className='flex-div flex-row'>
                                         <div className='fixed-url'> www.eden.com </div>
                                         <Field name="workspaceUrl" className="input-primary url-input" label="Workspace Url" ></Field>
