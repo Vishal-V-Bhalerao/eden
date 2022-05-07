@@ -52,6 +52,10 @@
     color: #364259;
 }
 
+.input-primary:focus-visible {
+    border: thin solid #664DE5;
+}
+
 .field-div {
     display: flex;
     flex-direction: column;
@@ -134,4 +138,11 @@ h4 {
 
 .radio-container {
     width: 410px;
+}
+
+.error-message {
+    color: red;
+    display: block;
+    font-size: 0.9rem;
+    margin-top: 5px;
 }

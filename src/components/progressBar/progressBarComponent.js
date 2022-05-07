@@ -7,13 +7,13 @@ export default function ProgressBarComponent() {
         <div className='flex-div flex-row progress-bar' >
             <div className='step-container-filled' ><div className='progress-step steps' >1</div></div>
             <div className={step >= 1 ? 'step-container-filled' : 'step-container-empty'} >
-                <div className={step >= 1 ? 'progress-step steps' : 'progress-empty steps'} >2</div>
+                <div className={step >= 1 ? 'progress-step color-animation steps' : 'progress-empty color-animation steps'} >2</div>
             </div>
             <div className={step >= 2 ? 'step-container-filled' : 'step-container-empty'} >
-                <div className={step >= 2 ? 'progress-step steps' : 'progress-empty steps'}  >3</div>
+                <div className={step >= 2 ? 'progress-step color-animation steps' : 'progress-empty color-animation steps'}  >3</div>
             </div>
             <div className={step >= 3 ? 'step-container-filled' : 'step-container-empty'} >
-                <div className={step >= 3 ? 'progress-step steps' : 'progress-empty steps'} >4</div>
+                <div className={step >= 3 ? 'progress-step color-animation steps' : 'progress-empty color-animation steps'} >4</div>
             </div>
         </div>
     )

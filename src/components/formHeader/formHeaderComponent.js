@@ -1,7 +1,9 @@
 import { useContext } from 'react';
 import { stepContext } from '../../context/stepContext';
+import { userInfoContext } from '../../context/userInfoContext';
 import './index.css'
 export default function FormHeaderComponent() {
+    const { userInfo } = useContext(userInfoContext)
     const headingsArray = [
         {
             tab: 0,
@@ -21,7 +23,7 @@ export default function FormHeaderComponent() {
         {
             tab: 3,
             img: './icons/completed.PNG',
-            main: "Congratulations, !",
+            main: `Congratulations, ${userInfo.fullName} !`,
             sub: "You have completed onboarding, you can start using the eden!"
         }
     ];

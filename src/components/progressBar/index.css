@@ -101,3 +101,7 @@
     border: thin solid #d3d3d3ad;
     will-change: width;
 }
+
+.color-animation {
+    transition: background-color linear 0.5s;
+}
