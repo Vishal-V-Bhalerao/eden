@@ -53,7 +53,7 @@
 }
 
 .input-primary:focus-visible {
-    border: thin solid #664DE5;
+    outline: thin solid #664DE5;
 }
 
 .field-div {
@@ -145,4 +145,29 @@ h4 {
     display: block;
     font-size: 0.9rem;
     margin-top: 5px;
+}
+
+@media screen and (max-width: 700px) {
+    .form-header-main {
+        width: 400px;
+        width: 400px;
+        text-align: center;
+    }
+
+    .input-primary {
+        width: 315px;
+    }
+
+    .form-button {
+        height: 50px;
+        width: 340px;
+    }
+
+    .url-input {
+        width: 165px !important;
+    }
+
+    .App {
+        margin-right: -38px;
+    }
 }
